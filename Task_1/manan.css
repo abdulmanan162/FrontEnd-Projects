@@ -1,7 +1,7 @@
-#container {
+/* #container {
     display: flex;
  
-}
+} */
 #header {
     display: flex;
     background-color: slateblue;
@@ -22,7 +22,7 @@
 }
 
 #box1 {
-    color: pink;
+    color: rgb(82, 12, 196);
 }
 #grey{
     background-color: grey;
@@ -58,11 +58,25 @@
     
 }
  #left{
-    /* display: inline-block; */
-    /* position: absolute; */
-    /* left: 42px;
-    top: 20px; */
+    
     margin: 1px 1528px ;
      
-    
  }
+ #row2{
+     display: flex;
+ }
+#education{
+    width: 50%;
+    margin: 0px 15px;}
+.list{
+display: flex;
+justify-content: center;
+/* width: 50%; */
+    }
+#row3{
+    display: flex;
+    margin: -600px 1px 0px 850px;
+}
+#achiement{
+    width: 50%;
+    margin: 0px 15px;}
