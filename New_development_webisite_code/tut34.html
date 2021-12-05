@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .contanier {
+        display: flex;
+    }
+
+    .card {
+        /* border: 3px solid firebrick; */
+        padding: 2px 12px;
+        margin: 12px 23px;
+        background-color: cyan;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+
+        /* box-shadow:  6px 5px greenyellow;
+              box-shadow:  -6px -5px greenyellow;
+             box-shadow:  -6px -5px 10px greenyellow;
+            box-shadow:  6px 5px 10px greenyellow; 
+             box-shadow:  -6px -5px 10px 34px greenyellow;*/
+        /* box-shadow:  -6px -5px 10px 34px  rgba(54, 14, 107, 0.7);*/
+        box-shadow: inset 6px 8px greenyellow;
+        box-shadow: 6px 8px greenyellow, 4px 10px red;
+    }
+
+    .card h2 {
+        /* text-shadow:  3px 4px red;
+          text-shadow:  3px 4px 6px rgb(245, 237, 237); */
+        text-shadow: -3px -4px 6px rgb(245, 237, 237);
+    }
+</style>
+
+<body>
+    <div class="contanier">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis possimus omnis totam aliquam modi
+                quidem libero voluptatem, corporis, ab ea, nulla quibusdam consequatur quaerat consequuntur distinctio
+                facilis ipsam est rerum cumque eum repudiandae ullam.</p>
+
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo tempora ut ratione rerum labore veniam
+                doloribus quaerat vel iste maiores ad, expedita fuga animi. Tenetur distinctio fugiat deserunt vero quae
+                architecto similique provident fuga?</p>
+
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo tempora ut ratione rerum labore veniam
+                doloribus quaerat vel iste maiores ad, expedita fuga animi. Tenetur distinctio fugiat deserunt vero quae
+                architecto similique provident fuga?</p>
+        </div>
+    </div>
+</body>
+
+</html>

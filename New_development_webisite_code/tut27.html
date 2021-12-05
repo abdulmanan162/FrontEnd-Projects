@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>visibilty</title>
+    <style>
+        .box {
+            width: 192px;
+            height: 192px;
+            border: 3px solid rgb(3, 3, 3);
+           
+        }
+
+        #box1 {
+            position: relative;
+            top: 45px;
+            /* z-index: will work only for postion:fixed,absolute,stick and relative; */
+            /*  WILL HIDE the element and the space */
+            /* display: none; */
+            /* will hide the element but shoe it empty space  */
+            /* /* visibility: hidden;  */
+            background-color: green;
+            z-index: -67;
+        }
+
+        #box2 {
+
+            /* z-index: will work only for postion:fixed,absolute,stick and relative; */
+            /*  WILL HIDE the element and the space */
+            /* display: none; */
+            /* will hide the element but shoe it empty space  */
+            /* /* visibility: hidden;  */
+            position: relative;
+            top: 12px;
+            background-color: greenyellow;
+            z-index: -33;
+        }
+
+        #box3 {
+            background-color: red;
+
+        }
+
+        #box4 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box1">
+    </div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+ 
+
+</html>

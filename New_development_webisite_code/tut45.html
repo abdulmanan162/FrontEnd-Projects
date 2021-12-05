@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css gride+ media quaries</title>
+    <style>
+    *{
+margin: 7px;
+    }
+        .container {
+            
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section  section '
+                ' aside aside aside aside '
+                'footer footer footer';
+        }
+        span{
+            display: block;
+            align-items: center;
+        }
+aside{
+    display: none;
+}
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            span{
+            display: block;
+            align-items: center;
+        }
+        aside{
+    display: none;
+}
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: rgb(122, 121, 153);
+            }
+            span{
+            display: block;
+            align-items: center;
+        }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: rgb(238, 255, 4);
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: rgb(21, 202, 45);
+            }
+            .container {
+            
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section  section '
+                ' aside aside aside aside '
+                'footer footer footer';
+        }
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 23px;
+            background-color: rgb(74, 11, 156)
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section; 
+        }
+
+        aside {
+           
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class=border-now>
+<span>home</span>
+<span> services</span>
+<span>contact us </span>
+<span>about</span>
+           
+        </nav>
+        <section class=border-now>
+            <h2>learn css in urdu</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam commodi, ipsa amet quis vel corporis nulla at deserunt, mollitia ducimus vitae natus! Aliquam debitis vitae aspernatur ea optio reprehenderit a nemo repellendus totam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos est et ab optio. Sit, hic. Doloribus ad impedit numquam quos dolores nobis, laudantium culpa temporibus illo porro sit? Ipsam nihil tenetur voluptatum! Minima accusantium dolores temporibus asperiores aliquam iste distinctio nemo, iure amet dolorem sint voluptas accusamus possimus, tempora nisi error id dolor. Nobis corrupti repellendus sequi sapiente voluptatem pariatur eligendi fugit molestias laborum suscipit quas recusandae eos odit non soluta eaque similique mollitia tenetur, enim in reprehenderit error aperiam id at? Minima ullam harum quisquam ex voluptatem! Eligendi animi nam facilis cupiditate vitae velit, unde eum! Ut magni recusandae vel suscipit sint cum enim perferendis odio? Dolorum libero facere modi optio?</p>
+        </section>
+        <aside class=border-now>
+            <h1>more about us</h1>
+           
+        </aside>
+    </div>
+    <footer class=border-now>copy ri9ght with manan </footer>
+
+</body>
+
+</html>
