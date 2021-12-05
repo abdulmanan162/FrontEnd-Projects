@@ -2,7 +2,18 @@
     display: flex;
  
 }
-
+#header {
+    display: flex;
+    background-color: slateblue;
+}
+#header > div{
+    margin: 10px;
+    padding: 20px;
+}
+#right > img{
+    border: 1px solid steelblue;
+    border-radius: 50%;
+}
 .box {
     color: white;
     background-color: rgb(103, 151, 207);
@@ -15,11 +26,25 @@
 }
 #grey{
     background-color: grey;
-}
-.line1 {
+    display: flex;
     justify-content: center;
-    margin: 0px 500px;
-    
+}
+#grey > p{
+    margin: 10px;
+    padding: 20px;
+}
+#row1{
+    display: flex;
+}
+#row1 > div{
+    margin: 10px;
+    padding: 20px;
+}
+#work_exp{
+    width: 50%;
+}
+#skills{
+    width: 50%;
 }
 .btn{
     background-color: rgb(93, 93, 138);
